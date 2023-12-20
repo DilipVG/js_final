@@ -1,0 +1,2326 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* NAVBAR STYLING */
+
+.product-contact-link{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-js-black);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+    white-space: nowrap;
+    margin-right: 150px;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropbtn span{
+    padding-left: 12px;
+}
+
+.dropdown .dropbtn{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;    
+
+    font-size: 14px;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dropdown-content a img{
+    width: 34px;
+    height: 24px;
+    margin-right: 8px;
+
+}
+
+.dropdown-content a:hover {
+    /* background-color: #ddd; */
+    color: #55079B;
+    font-weight: 600;
+}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+/* END OF NAVBAR STYLING */
+
+nav .container{
+    /* width: 1440px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 9px;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+nav .container .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+nav .container .options .option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;  
+    cursor: pointer;
+}
+
+
+
+.form-card{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #00000066;
+    margin: 80px auto;
+    width: 700px;
+    height: 800px;
+}
+
+.form-card img{
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.form-card h2{
+    font-family: "Open Sans Hebrew", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.form-card form span{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.form-card form span a{
+    color: #55079b;
+    text-decoration: underline;
+}
+
+
+.form-card form input{
+    width: 314px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.form-card form input[type="submit"]{
+    width: 314px;
+    height: 40px;
+
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    border: transparent;
+    color: #ffffff;
+}
+
+
+
+.login-container{
+    width: 1200px;
+    height: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #00000066;
+    margin: 80px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.login-container .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.login-container .form-container form label{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 14px;
+}
+
+.login-container .form-container form input{
+    width: 314px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.login-container .form-container form input[type="submit"]{
+    width: 314px;
+    height: 40px;
+    border: transparent;
+    color: #ffffff;
+
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+}
+
+nav .container .sign-in{
+    width: 92px;
+    height: 34px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    border: transparent;
+    border-radius: 10px;
+    margin-right: 150px;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.main-hero{
+    margin: 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-hero .banner{
+    width: 1140px;
+    height: 312px;  
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: -1px 0px 3px #00000040;
+}
+
+.main-hero .banner .message{
+    padding-left: 50px;
+}
+
+.main-hero .banner img{
+    width: 550px;
+    height: 312px;
+}
+
+.main-hero .banner .message h2{
+    font-family: "Open Sans Hebrew", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.main-hero .banner .message .short-messages{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.main-hero .banner .message .short-message{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #55079b;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.main-hero .banner .message button{
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    width: 275px;
+    height: 42px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+    border: transparent;
+}
+
+.products{
+    box-shadow: 0px 4px 4px #00000040;
+    padding-bottom: 50px;
+}
+
+.products h3{
+    width: 212px;
+    margin: 30px 615px;
+    font-family: "Open Sans Hebrew", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.products .products-catalog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 105px;
+    margin-top:50px;
+}
+
+.products .products-catalog .product img{
+    width: 114px;
+    height: 102px;
+}
+
+.products .products-catalog .product{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+.second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 100px;
+    padding-bottom: 60px;
+}
+
+.features .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.features .feature p{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ad{
+    margin: 10px 150px;
+    width: 1140px;
+    height: 140px;
+    /* padding-bottom: 45px; */
+}
+
+
+.call-scheduler-container{
+    width: 1140px;
+    /* height: 620px; */
+    margin: 50px auto;
+    /* margin: 50px 150px; */
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px #00000040;
+}
+
+.call-scheduler-container h3{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-top: 40px;
+}
+
+.call-scheduler-container .call-scheduler{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+    /* margin-top: 50px; */
+}
+
+
+
+
+
+.call-scheduler-container .call-scheduler form label{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #55079b;
+    font-size: 14px;
+    letter-spacing: 0;
+    display: block;
+    margin-bottom: 2px;
+
+}
+.call-scheduler-container .call-scheduler form .age-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 8px;
+}
+
+.call-scheduler-container .call-scheduler form .age-container .age-input{
+    margin: 0;
+    padding: 0;
+}
+
+.call-scheduler-container .call-scheduler form .age-container .age-input #dob{
+    width: 300px;
+}
+
+.call-scheduler-container .call-scheduler form .age-container .age-input #age{
+    width: 100px;
+}
+
+.call-scheduler-container .call-scheduler form input, select{
+    width: 100%;
+    width: 408px;
+    height: 40px;   
+    /* padding: 8px; */
+    /* margin-bottom: 5px; */
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #272329;
+
+}
+
+/* input, select {
+    width: 100%;
+    width: 408px;
+    height: 40px;   
+    padding: 8px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #272329;
+} */
+
+.call-scheduler-container .call-scheduler form input[type="radio"] {
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.call-scheduler-container .call-scheduler form .radio-label{
+    margin: 0px;
+    height: 30px;
+    color: #272329;
+}
+
+.call-scheduler-container .call-scheduler form input[type="submit"]{
+    width: 408px;
+    height: 40px;
+    color: white;
+    border: transparent;
+
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    cursor: pointer;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 88px;
+}
+
+
+.ratings{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.ratings h2{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 80px;
+}
+
+.ratings h3{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 700;
+    color: #55079b;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    margin-top: 44px;
+    margin-bottom: 50px;
+    line-height: normal;
+}
+
+.ratings h4{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.review-header 
+{
+    margin: 60px auto;
+}
+
+.review-header .JS-insurance{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 28px;
+    letter-spacing: 0;
+    /* margin: 40px 540px; */
+    text-align: center;
+    line-height: normal;
+}
+
+.review-header .text-wrapper{
+    color: #55079b;
+}
+
+.review-header span{
+    color: #272329;
+}
+
+.review-header .reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.review-header .reviews .review{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #55079b;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+
+}
+
+.review-header .reviews .review-left{
+    text-align: right;
+}
+
+.companies{
+
+width: 1140px;
+height: 261px;
+margin: 50px auto;
+background-color: #ffffff;
+border-radius: 15px;
+box-shadow: 4px 4px 10px #00000040;
+}
+
+.companies h2{
+    padding-top: 30px;
+    margin-left: 370px;
+    margin-right: 370px;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 700;
+    color: var(--variable-collection-js-black);
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+.companies .company-logos{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 45px;
+}
+
+.testimonials-container{
+    width: 1140px;
+    height: 850px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px #00000040;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-bottom: 40px;
+}
+
+.testimonials-container h2{
+    text-align: center;
+    padding-top: 44px;
+    padding-bottom: 20px;
+    font-family: "Open Sans Hebrew-Bold", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.testimonials-container .testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 10px;
+}
+
+.testimonials-container .testimonials .testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-container .testimonials .testimony .customer-name{
+    text-align: center;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #55079b;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.testimonials-container .testimonials .testimony p{
+    text-align: center;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 30px;
+
+}
+
+.bottom-button{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.bottom-call{
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    width: 275px;
+    height: 45px;
+    /* padding: 10px; */
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+    border: transparent;
+}
+
+
+.footer-bar{
+    background: #55079B;
+}
+
+.footer-bar h3{
+    color: white;
+    padding-top: 65px;
+    margin-left: 150px;
+
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-decoration: underline;
+    white-space: nowrap;
+    
+}
+
+.footer-bar p{
+    color: white;
+    /* padding-top: 65px; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 150px;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+.footer-bar .copyright-text{
+    margin: 10px 0px;
+    text-align: center;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 28px;
+    white-space: nowrap;
+    padding-bottom: 50px;
+}
+
+
+/* MOTOR INSURANCE PAGE */
+
+.motor-banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+.motor-banner .banner-message h1{
+    font-size: 54px;
+    color: #55079B;
+
+}
+
+.motor-banner .banner-message h1 span{
+    font-size: 34px;
+    color:#272329
+}
+
+.motor-banner .banner-message p{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-js-black);
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.motor-banner .banner-message .get-insured{
+    padding: 5px 41px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    border-color: transparent;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.motor-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 125px auto 50px;
+    width: 1140px;
+}
+
+.motor-center .user-form{
+    width: 560px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    text-align: center;
+}
+
+.motor-center .user-form h1{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #272329;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.motor-center .user-form h3{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: 272329;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.motor-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1140px;
+    height: auto;
+    margin: 125px auto 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    
+    padding-bottom: 45px;
+}
+
+.motor-bottom .motor-bottom-message h1{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.motor-bottom .motor-bottom-message h1 span{
+    color: #55079b;
+}
+
+.motor-bottom .motor-bottom-message p{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 22px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+.claims-container{
+    width: 560px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    margin: 160px auto;
+}
+
+.claims-container h2{
+    font-family: "Martel Sans", Helvetica;
+font-weight: 600;
+color: var(--variable-collection-js-black);
+font-size: 28px;
+text-align: center;
+letter-spacing: 0;
+line-height: normal;
+}
+
+.claims-container form{
+    text-align: center;
+}
+
+.track-container{
+    margin: 250px auto;
+    width: 560px;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    text-align: center;
+    padding: 44px 134px 76px;
+}
+
+.track-container{
+    padding: 45px;
+}
+
+.track-container .track-input-container img{
+    width: 35px;
+    height: 42px;
+}
+
+.track-container .track-input-container h2{
+    height: 51px;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-js-black);
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.track-container .track-input-container select, input{
+    width: 292px;
+    height: 45px;
+    border-radius: 10px;
+    border: 0.6px solid #272329;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: var(--variable-collection-78787a);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.track-container .track-input-container input#submit{
+    width: 292px;
+    height: 45px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    border-color: transparent;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.track-details-container {
+    width: 560px;
+    height: 370px;
+    margin: 250px auto 1180px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+}
+.track-details-container .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.track-details-container .top img{
+    width: 125px;
+    height: 50px;
+    margin-top: 30px;
+
+}
+.track-details-container .top h2 {
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-js-black);
+    font-size: 24px;
+    /* text-align: center; */
+    /* width: 194px; */
+    height: 16px;
+    margin: 12px auto;
+}
+
+.track-details-container .top span{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: var(--variable-collection-js-black);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 177px;
+    height: 10px;   
+
+}
+
+.track-details-container .bottom{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.track-details-container .bottom h3{
+    height: 29px;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-js-black);
+    font-size: 16px;
+}
+
+.track-details-container .bottom span{
+    height: 22px;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-js-black);
+    font-size: 14px;
+    margin: 1px;
+}
+
+.track-details-container .bottom span#due_date{
+    color: #A82A2FD6;
+}
+
+
+
+/* DASHBOARD PAGE STYLING */
+
+.top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 75px auto;
+}
+
+.top .personal-details h2{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.top .personal-details img{
+    width: 120px;
+    height: 120px;
+}
+
+.top .personal-details form label{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.top .personal-details form input{
+    width: 346px;
+    height: 45px;
+    margin-bottom: 4px;
+    text-align:left;
+    padding-left: 15px;
+}
+
+.top .personal-details form input[type="submit"]{
+    width: 138px;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    padding: 4px;
+    color: #ffffff;
+    border: transparent;
+    margin-top: 5px;
+}
+
+
+
+
+
+.dashboard-policies{
+    width: 1140px;
+    height: auto;
+    margin: auto;
+    padding: 60px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #00000066;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboard-policies-heading{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-policies .policy{
+    width: 246px;
+    height: 240px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #00000066;
+    margin: 50px 10px;
+
+    font-size: 10px;
+    display: block;
+    text-align: center;
+}
+
+.dashboard-policies .policy img{
+    width: 100px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+.dashboard-policies .policy p{
+    margin: 2px;
+}
+
+.dashboard-policies .policy .category{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #272329;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard-policies .policy .pol{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-policies .policy .ins_comp{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #55079B;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.features-dashboard{
+    margin-top: 90px;
+    margin-bottom: 600px;
+}
+/* END OF DASHBOARD STYLING */
+
+
+/* RESET PASSWORD STYLING */
+
+
+
+.reset-password-container{
+    width: 600px;
+    height: 700px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #00000066;
+    display: block;
+    text-align: center;
+    padding: 60px;
+
+    margin: 80px auto;
+}
+
+.reset-password-container p{
+    text-align: center;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.reset-password-container form > label{
+    text-align: none;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.reset-password-container form #mobile{
+    width: 314px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.6px solid;
+    margin-bottom: 10px;
+}
+
+.reset-password-container form #submit{
+    width: 314px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    border: transparent;
+    color: #ffffff;
+}
+
+
+.reset-password-container .error-message{
+    color: #A82A2FD6;
+}
+
+
+
+.otp-expiry-message{
+    color: #A82A2FD6;
+}
+
+
+
+
+/* END OF RESET PASSWORD STYLING */
+
+
+
+
+
+/* MEDIA QUERIES FOR MOBILE SCREEN AT 360PX */
+
+@media screen and (max-width:360px) {
+
+    /* body{
+        /* width: 360px; */
+        /* overflow: hidden; */
+    /* } */
+
+/* NAVBAR STYLING */
+
+nav .container{
+    /* width: 360px; */
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 9px;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+nav .container-product{
+    width: 360px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container-product .product-contact-link{
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+nav .container-product img{
+    width: 83px;
+    height: 30px;
+}
+
+nav .container img{
+    width: 83px;
+    height: 30px;
+}
+
+
+nav .container .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+nav .container .options .dropdown{
+    display: none;
+}
+
+
+
+
+nav .container .sign-in{
+    width: 58px;
+    height: 18px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    border: transparent;
+    border-radius: 4px;
+    margin-right: 16px;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 8px;
+}
+
+/* END OF NAVBAR STYLING */
+
+
+
+
+.main-hero{
+    margin: 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-hero .banner{
+    width: 328px;
+    height: 90px;  
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: -1px 0px 3px #00000040;
+}
+
+.main-hero .banner .message{
+    padding-left: 0px;
+    width: 140px;
+}
+
+.main-hero .banner img{
+    width: 166px;
+    height: 90px;
+}
+
+.main-hero .banner .message h2{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 10px;
+    letter-spacing: 0;
+    padding-top: 2px;
+    margin: 2px auto;
+}
+
+.main-hero .banner .message .short-messages{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.main-hero .banner .message .short-message{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #55079b;
+    font-size: 4px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.main-hero .banner .message button{
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    width: 72px;
+    height: 14px;
+    margin: 3px auto;
+    font-size: 6px;
+    letter-spacing: 0;
+    line-height: normal;
+    border: transparent;
+}
+
+
+
+
+
+/* PRODUCTS */
+
+
+.products{
+    /* box-shadow: 0px 4px 4px #00000040; */
+    /* background-color: red; */
+    width: 360px;
+    padding-bottom: 10px;
+}
+
+.products h3{
+    margin: 11px auto;
+    font-size: 10px;
+}
+
+.products .products-catalog{
+    gap: 26px;
+    margin-top: 15px;
+}
+
+.products .products-catalog .product{
+    gap: 9px;
+    font-size: 8px;
+}
+
+.products .products-catalog .product img{
+    width: 33px;
+    height: 24px;
+}
+
+/* FEATURES */
+
+
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 33px;
+    padding-bottom: 10px;
+}
+
+
+
+.features .feature img{
+    width: 22px;
+    height: 20px;
+}
+
+.features .feature p{
+    font-size: 8px;
+}
+
+.ad{
+    margin: 22px auto;
+    width: 330px;
+    height: 40px;
+    /* padding-bottom: 5px; */
+}
+
+    
+/* CALL Scheduler */
+
+
+
+.call-scheduler-container{
+    width: 328px;
+    /* height: 620px; */
+    margin: 20px auto;
+    
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px #00000040;
+}
+
+.call-scheduler-container h3{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.call-scheduler-container .call-scheduler{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 2px;
+    margin-top: 20px;
+    padding-right: 5px;
+}
+
+.call-scheduler-container .call-scheduler img{
+    width: 176px;
+}
+
+.call-scheduler-container .call-scheduler form{
+    width: 176px;
+}
+
+
+.call-scheduler-container .call-scheduler form label{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #55079b;
+    font-size: 8px;
+    letter-spacing: 0;
+    display: block;
+    margin: 2px 0px;
+}
+
+
+.call-scheduler-container .call-scheduler form .age-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2px;
+}
+
+.call-scheduler-container .call-scheduler form .age-container .age-input{
+    margin: 0;
+    padding: 0;
+}
+
+.call-scheduler-container .call-scheduler form .age-container .age-input #dob{
+    width: 80px;
+}
+
+.call-scheduler-container .call-scheduler form .age-container .age-input #age{
+    width: 100%;
+}
+
+.call-scheduler-container .call-scheduler form input{
+    width: 100%;
+    width: 150px;
+    height: 20px;   
+    /* padding: 8px; */
+    /* margin-bottom: 5px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #272329;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+/* input, select {
+    width: 100%;
+    width: 408px;
+    height: 40px;   
+    padding: 8px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #272329;
+} */
+
+.call-scheduler-container .call-scheduler form input[type="radio"] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    border-width: 1px;
+}
+
+.call-scheduler-container .call-scheduler form .radio-label{
+    margin: 2px;
+    height: 15px;
+    color: #272329;
+    font-size: 6px;
+}
+
+.call-scheduler-container .call-scheduler form input[type="submit"]{
+    width: 150px;
+    height: 22px;
+    color: white;
+    border: transparent;
+
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    cursor: pointer;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 11px;
+}
+
+/* REVIEWS */
+
+
+.ratings{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.ratings h2{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 2px;
+}
+
+.ratings h3{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 700;
+    color: #55079b;
+    font-size: 8px;
+    text-align: center;
+    letter-spacing: 0;
+    margin: 10px auto;
+    line-height: normal;
+}
+
+.ratings h4{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 8px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ratings img{
+    width: 195px;
+    height: 38px;
+}
+
+
+
+.review-header 
+{
+    margin: 20px auto;
+}
+
+.review-header .JS-insurance{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 10px;
+    letter-spacing: 0;
+    /* margin: 40px 540px; */
+    text-align: center;
+    line-height: normal;
+}
+
+.review-header .text-wrapper{
+    color: #55079b;
+}
+
+.review-header span{
+    color: #272329;
+}
+
+.review-header .reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-header .reviews img{
+    width: 200px;
+    height: 90px;
+}
+
+.review-header .reviews .review{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 200;
+    color: #55079b;
+    font-size: 6px;
+    letter-spacing: 0;
+    line-height: normal;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+.review-header .reviews .review-left{
+    text-align: right;
+}
+
+
+
+/* RATINGS */
+
+/* COMPANIES */
+
+
+.companies{
+
+    width: 330px;
+    height: 75px;
+    margin: 13px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px #00000040;
+}
+    
+.companies h2{
+        padding-top: 8px;
+        margin: 5px auto;
+        font-family: "Martel Sans", Helvetica;
+        font-weight: 700;
+        color: var(--variable-collection-js-black);
+        font-size: 10px;
+        letter-spacing: 0;
+        line-height: normal;
+        text-align: center;
+    
+}
+    
+.companies .company-logos{
+        display: flex; 
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 8px;
+        margin-top: 15px;
+}
+    
+.companies .company-logos img{
+    width: 40px;
+    height: 25px;
+
+}
+
+/* TESTIMONIALS */
+
+
+
+.testimonials-container{
+    width: 325px;
+    height: 1150px;
+    margin: 20px 18px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px #00000040;
+}
+
+.testimonials-container h2{
+    font-size: 10px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 20px;
+    margin: 3px auto;
+}
+
+.testimonials-container .testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 34px;
+    margin-top: 10px;
+}
+
+.testimonials-container .testimonials .testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-container .testimonials .testimony img{
+    width: 130px;
+    height: 130px;
+}
+
+.testimonials-container .testimonials .testimony .customer-name{
+    text-align: center;
+    font-size: 10px;
+}
+
+.testimonials-container .testimonials .testimony p{
+    text-align: center;
+    font-size: 9px;
+    line-height: 16px;
+
+}
+
+.bottom-button{
+    margin-bottom: 25px;
+}
+
+.bottom-call{
+    border-radius: 4px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    font-family: "Martel Sans-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    width: 154px;
+    height: 30px;
+    margin: 20px auto;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    border: transparent;
+}
+
+
+.footer-bar{
+    background: #55079B;
+}
+
+.footer-bar h3{
+    color: white;
+    padding-top: 65px;
+    margin-left: 50px;
+    font-size: 10px;
+    
+}
+
+.footer-bar p{
+    color: white;
+    /* padding-top: 65px; */
+    margin-left: 50px;
+    font-size: 8px;
+}
+
+.footer-bar .copyright-text{
+    margin: 10px 0px;
+    text-align: center;
+    font-family: "Martel Sans-Light", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 6px;
+    letter-spacing: 0;
+    line-height: 28px;
+    white-space: nowrap;
+    padding-bottom: 50px;
+}
+
+
+
+/* PRODUCT INSURANCE PAGE */
+
+.motor-banner{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+.motor-banner .banner-message{
+    margin-left: 16px;
+    width: 300px;
+}
+
+.motor-banner .banner-message h1{
+    color: #55079B;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.motor-banner .banner-message h1 span{
+    font-size: 10px;
+    color:#272329
+}
+
+.motor-banner .banner-message p{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 9px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: 12px;
+}
+
+.motor-banner .banner-message .get-insured{
+    width: 86px;
+    height: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+    border: transparent;
+    margin-bottom: 16px;
+}
+
+.motor-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 125px auto 50px; */
+    width: 328px;
+}
+
+.motor-center img{
+    width: 280px;
+    height: 200px;
+}
+
+.motor-center .user-form{
+    width: 328px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    text-align: center;
+}
+
+.motor-center .user-form h1{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    color: #272329;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+}
+
+.motor-center .user-form h3{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #55079B;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 4px;
+}
+
+.motor-center .user-form form input, .motor-center .user-form form select{
+    width: 297px;
+    height: 40px;
+
+    border-radius: 10px;
+    border: 0.6px solid;
+    border-color: #272329;
+    margin-bottom: 10px;
+
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    background-color: #ffffff;
+
+}
+
+.motor-center .user-form form input[type="submit"]{
+    width: 297px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    border: transparent;
+}
+
+
+.motor-bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: auto;
+    /* margin: 125px auto 50px; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    
+    padding-bottom: 45px;
+}
+
+.motor-bottom img{
+    width: 270px;
+}
+.motor-bottom .motor-bottom-message h1{
+    font-family: "Martel Sans", Helvetica;
+
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.motor-bottom .motor-bottom-message h1 span{
+    color: #55079b;
+}
+
+.motor-bottom .motor-bottom-message p{
+
+    color: #272329;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+
+
+/* LOGIN */
+
+.login-container{
+    width: 320px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #00000066;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+
+.login-container .form-container{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.login-container .form-container img{
+    width: 250px;
+    height: 250px;
+}
+
+.login-container .form-container form label{
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 14px;
+    display: none;
+}
+
+.login-container .form-container form input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.login-container .form-container form input[type="submit"]{
+    width: 300px;
+    height: 40px;
+    border: transparent;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+}
+
+
+
+.form-card{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #00000066;
+    margin: 30px auto;
+    width: 320px;
+    height: 700px;
+}
+
+.form-card img{
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.form-card h2{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: #272329;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.form-card form span{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: #272329;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.form-card form span a{
+    color: #55079b;
+    text-decoration: underline;
+}
+
+
+.form-card form input{
+    width: 280px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.form-card form input[type="submit"]{
+    width: 280px;
+    height: 40px;
+
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    border: transparent;
+    color: #ffffff;
+}
+
+
+.reset-password-container form input{
+    width: 270px;
+    margin-bottom: 5px;
+}
+
+
+
+/* RESET PASSWORD STYLING */
+
+
+
+.reset-password-container{
+    width: 320px;
+    height: auto;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #00000066;
+    display: block;
+    text-align: center;
+    padding: 30px;
+
+    margin: 80px auto;
+}
+
+.reset-password-container img{
+    width: 270px;
+    height: 270px;
+    text-align: center;
+}
+
+.reset-password-container p{
+    text-align: center;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.reset-password-container form > label{
+    text-align: none;
+    font-family: "Martel Sans", Helvetica;
+    font-weight: 300;
+    color: #272329;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.reset-password-container form #mobile{
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.6px solid;
+    margin-bottom: 10px;
+}
+
+.reset-password-container form #submit{
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+    border: transparent;
+    color: #ffffff;
+}
+
+
+.reset-password-container .error-message{
+    color: #A82A2FD6;
+}
+
+
+
+.otp-expiry-message{
+    color: #A82A2FD6;
+}
+
+
+
+/* END OF RESET PASSWORD STYLING */
+
+
+
+
+
+
+
+
+
+
+}

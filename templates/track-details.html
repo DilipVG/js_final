@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Track</title>
+</head>
+<body>
+    <div class="track-details-container">
+        <div class="top">
+            <img src="{{url_for('static', filename='img/icici-lombard-logo-CBC16AFE97-seeklogo 4.png')}}" alt="">
+            <h2>{{policy_details.category}} Insurance</h2>
+            <span>Policy Type: {{policy_details.policy_type}}</span>
+        </div>
+        <div class="bottom">
+            <h3>{{policy_details.insurance_company}}</h3>
+            <span>Policy Name: {{policy_details.policy_name}}</span>
+            <span>Policy No: {{policy_details.policy_no}}</span>
+            <span>Customer Name: {{username}}</span>
+            <span id="due_date">Due Date: {{policy_details.due_date}}</span>
+            <span>Amount to be payed: {{policy_details.emi_amount}}/-</span>
+        </div>
+    </div>
+    
+</body>
+</html>
+<!-- policy_details -->

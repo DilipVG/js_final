@@ -1,0 +1,595 @@
+.motor {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .motor .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 1904px;
+    position: relative;
+  }
+  
+  .motor .rectangle {
+    position: absolute;
+    width: 1140px;
+    height: 500px;
+    top: 1132px;
+    left: 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .motor .rectangle-2 {
+    position: absolute;
+    width: 1440px;
+    height: 482px;
+    top: 80px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px #00000066;
+  }
+  
+  .motor .group {
+    position: absolute;
+    width: 1441px;
+    height: 482px;
+    top: 80px;
+    left: 0;
+  }
+  
+  .motor .car-technician-with {
+    position: absolute;
+    width: 88px;
+    height: 482px;
+    top: 0;
+    left: 0;
+  }
+  
+  .motor .img {
+    position: absolute;
+    width: 824px;
+    height: 482px;
+    top: 0;
+    left: 617px;
+  }
+  
+  .motor .text-wrapper {
+    position: absolute;
+    width: 129px;
+    height: 40px;
+    top: 25px;
+    left: 1170px;
+    font-family: "Martel Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-js-black);
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+  }
+  
+  .motor .MI-banner-content {
+    position: absolute;
+    width: 552px;
+    height: 482px;
+    top: 80px;
+    left: 88px;
+  }
+  
+  .motor .overlap-group {
+    position: relative;
+    width: 546px;
+    height: 482px;
+    background-color: #ffffff;
+  }
+  
+  .motor .text-wrapper-2 {
+    position: absolute;
+    height: 39px;
+    top: 50px;
+    left: 62px;
+    font-family: "Open Sans Hebrew-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--variable-collection-js-violet);
+    font-size: 54px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .motor .text-wrapper-3 {
+    position: absolute;
+    height: 26px;
+    top: 94px;
+    left: 62px;
+    font-family: "Open Sans Hebrew-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-js-black);
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .motor .motor-insurance {
+    position: absolute;
+    width: 422px;
+    height: 215px;
+    top: 146px;
+    left: 62px;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-js-black);
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+  
+  .motor .frame-wrapper {
+    position: absolute;
+    width: 230px;
+    height: 37px;
+    top: 391px;
+    left: 62px;
+  }
+  
+  .motor .frame {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 41px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+  }
+  
+  .motor .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Martel Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .js-logo-colours {
+    position: absolute;
+    width: 221px;
+    height: 64px;
+    top: 11px;
+    left: 0;
+  }
+  
+  .motor .element-HEADER {
+    position: absolute;
+    width: 1442px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+  
+  .motor .overlap {
+    position: relative;
+    width: 1440px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .motor .LOGO {
+    position: absolute;
+    width: 230px;
+    height: 64px;
+    top: 7px;
+    left: 6px;
+  }
+  
+  .motor .text-wrapper-5 {
+    height: 12px;
+    top: 41px;
+    left: 1191px;
+    color: var(--variable-collection-js-black);
+    text-align: center;
+    line-height: normal;
+    position: absolute;
+    font-family: "Martel Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+  
+  .motor .group-2 {
+    position: absolute;
+    width: 1144px;
+    height: 450px;
+    top: 642px;
+    left: 150px;
+  }
+  
+  .motor .overlap-2 {
+    position: absolute;
+    width: 560px;
+    height: 450px;
+    top: 0;
+    left: 580px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .motor .overlap-group-wrapper {
+    position: absolute;
+    width: 294px;
+    height: 40px;
+    top: 128px;
+    left: 134px;
+  }
+  
+  .motor .div-wrapper {
+    position: relative;
+    width: 292px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.6px solid;
+    border-color: var(--variable-collection-js-black);
+  }
+  
+  .motor .text-wrapper-6 {
+    position: absolute;
+    height: 33px;
+    top: 4px;
+    left: 19px;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-78787a);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .overlap-wrapper {
+    position: absolute;
+    width: 294px;
+    height: 40px;
+    top: 184px;
+    left: 134px;
+  }
+  
+  .motor .group-3 {
+    position: absolute;
+    width: 294px;
+    height: 40px;
+    top: 240px;
+    left: 134px;
+  }
+  
+  .motor .text-wrapper-7 {
+    position: absolute;
+    height: 33px;
+    top: 4px;
+    left: 21px;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-78787a);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .p {
+    position: absolute;
+    width: 354px;
+    height: 15px;
+    top: 79px;
+    left: 103px;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-js-black);
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .let-s-get-your {
+    position: absolute;
+    height: 51px;
+    top: 24px;
+    left: 77px;
+    font-family: "Martel Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-js-black);
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .group-4 {
+    position: absolute;
+    width: 294px;
+    height: 40px;
+    top: 338px;
+    left: 134px;
+  }
+  
+  .motor .overlap-3 {
+    position: relative;
+    width: 292px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(129, 22, 154) 0%, rgb(85, 7, 155) 44.27%, rgb(65, 0, 152) 100%);
+  }
+  
+  .motor .text-wrapper-8 {
+    position: absolute;
+    height: 36px;
+    top: 3px;
+    left: 104px;
+    font-family: "Martel Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .element {
+    position: absolute;
+    width: 560px;
+    height: 320px;
+    top: 70px;
+    left: 0;
+  }
+  
+  .motor .group-5 {
+    position: absolute;
+    width: 1061px;
+    height: 422px;
+    top: 1168px;
+    left: 181px;
+  }
+  
+  .motor .group-6 {
+    position: absolute;
+    width: 552px;
+    height: 422px;
+    top: 0;
+    left: 0;
+  }
+  
+  .motor .why-choose-JS {
+    position: absolute;
+    width: 548px;
+    height: 142px;
+    top: 0;
+    left: 0;
+    font-family: "Martel Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: transparent;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  
+  .motor .span {
+    color: #000000;
+  }
+  
+  .motor .text-wrapper-9 {
+    color: #55079b;
+  }
+  
+  .motor .rev-up-your {
+    position: absolute;
+    width: 532px;
+    height: 280px;
+    top: 142px;
+    left: 0;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-js-black);
+    font-size: 22px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .mi {
+    position: absolute;
+    width: 464px;
+    height: 390px;
+    top: 30px;
+    left: 597px;
+  }
+  
+  .motor .group-7 {
+    position: absolute;
+    width: 294px;
+    height: 24px;
+    top: 938px;
+    left: 866px;
+  }
+  
+  .motor .overlap-4 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    top: 0;
+    left: 99px;
+    border-radius: 10px;
+  }
+  
+  .motor .text-wrapper-10 {
+    position: absolute;
+    height: 18px;
+    top: 4px;
+    left: 14px;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-78787a);
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .group-8 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    border: 0.6px solid;
+    border-color: var(--variable-collection-js-black);
+  }
+  
+  .motor .group-wrapper {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.6px solid;
+    border-color: var(--variable-collection-js-black);
+  }
+  
+  .motor .group-9 {
+    position: relative;
+    width: 63px;
+    height: 18px;
+    top: 3px;
+    left: 14px;
+  }
+  
+  .motor .text-wrapper-11 {
+    position: absolute;
+    height: 18px;
+    top: 0;
+    left: 0;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-78787a);
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .overlap-5 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    top: 0;
+    left: 200px;
+    border-radius: 10px;
+  }
+  
+  .motor .text-wrapper-12 {
+    position: absolute;
+    height: 18px;
+    top: 4px;
+    left: 12px;
+    font-family: "Martel Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-78787a);
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .motor .group-10 {
+    position: absolute;
+    width: 1440px;
+    height: 258px;
+    top: 1646px;
+    left: 0;
+    background-color: var(--variable-collection-js-violet);
+  }
+  
+  .motor .group-11 {
+    height: 258px;
+    background-color: #0000005c;
+  }
+  
+  .motor .group-12 {
+    position: relative;
+    width: 805px;
+    height: 152px;
+    top: 65px;
+    left: 149px;
+  }
+  
+  .motor .group-13 {
+    position: absolute;
+    width: 129px;
+    height: 27px;
+    top: 0;
+    left: 0;
+  }
+  
+  .motor .text-wrapper-13 {
+    width: 127px;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    line-height: 28px;
+    position: absolute;
+    font-family: "Martel Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+  
+  .motor .email-id {
+    position: absolute;
+    width: 324px;
+    top: 31px;
+    left: 0;
+    font-family: "Martel Sans-Light", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+  
+  .motor .text-wrapper-14 {
+    position: absolute;
+    top: 124px;
+    left: 341px;
+    font-family: "Martel Sans-Light", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+  

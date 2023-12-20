@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Insurance</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+
+        <nav>
+            <div class="container">
+                <a href="/"><img src="{{ url_for('static', filename='img/LOGO.svg') }}" alt="JS Insurance"></a>
+
+                <div class="options">
+                    <a href="tel: +919666697796">Help</a>
+
+                    <a href="{{url_for('logout')}}"><button class="sign-in">Logout</button></a>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- END OF NAVBAR -->
+
+        <!-- PERSONAL DETAILS -->
+
+        <div class="top">
+            <div class="personal-details">
+                <!-- <img src="{{ url_for('static', filename='img/profile-pic-placeholder.svg') }}" alt="Profile Picture"> -->
+                <h2>Personal Details</h2>
+                <form method="POST" action="{{ url_for('dashboard') }}">
+
+                    <label for="name">Username</label><br>
+                    <input type="text"  name="username" id="name" value="{{ user.full_name }}"><br>
+                    <label for="mobile">Mobile</label><br>
+                    <input type="text" id="mobile" name="mobile" value="{{ user.mobile }}"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" value="{{ user.email }}"><br>
+                    <label for="gender">Gender</label><br>
+                    <input type="text"  name="gender" id="gender" value="{{ user.gender }}"><br>
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" id="dob" name="dob" value="{{ user.dob }}"><br>
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" name="address" value="{{ user.address }}"><br>
+                    
+                    <input type="submit" id="submit" value="Save">
+                </form>
+            </div>
+            <img src="{{ url_for('static', filename='img/dashboard.png') }}" alt="User Dashboard">
+        </div>
+
+
+        <!-- END OF PERSONAL DETAILS -->
+
+
+        <h2 class="dashboard-policies-heading">My Policies</h2>
+        <div class="dashboard-policies">
+            {% for policy in user_policies %}
+                <div class="policy">
+                    <img src="{{ url_for('static', filename='img/icici-lombard-logo-CBC16AFE97-seeklogo 4.png') }}" alt="">
+                    <p class="category">{{policy.category}}</p>
+                    <p class="pol">Insurance Type: {{policy.policy_type}}</p>
+                    <p class="ins_comp">{{policy.insurance_company}}</p>
+                    <p class="pol">Policy Name: {{policy.policy_name}}</p>
+                    <p class="pol">Policy No: {{ policy.policy_no }}</p>
+                </div>
+            {% endfor %}
+
+        </div>
+
+
+        <div class="features features-dashboard">
+            <div class="feature">
+                <img src="{{ url_for('static', filename='img/track-icon.svg') }}" alt="track">
+                <p>Track Your Policy</p>
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='img/download-icon.svg') }}" alt="download">
+                <p>Download Your Policy</p>
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='img/claim-icon.svg') }}" alt="claim">
+                <p>Claim Your Policy</p>
+            </div>
+        </div>
+
+
+        <div class="footer-bar">
+            <h3>Contact Us</h3>
+            <p>Email Id: shalomjs3399@gmail.com</p>
+            <p>Mobile Number: +919666697796</p>
+            <p class="copyright-text">© 2023 JS Insurance Services, All Rights Reserved.</p>
+        </div>
+
+
+    </body>
+
+</html>

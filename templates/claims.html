@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>claims</title>
+</head>
+<body>
+    <div class="claims-container">
+        <img src="{{url_for('static', filename='img/claims-page-icon.svg')}}" alt="">
+        <h2>To Claim your Policy</h2>
+        <form method="POST" action="/claims">
+            <!-- <label for="customer_name">Customer Name:</label> -->
+            <input type="text" id="customer_name" name="customer_name" placeholder="Customer Name" required>
+            <br>
+            <!-- <label for="mobile">Mobile:</label> -->
+            <input type="text" id="mobile" name="mobile" placeholder="Mobile" required>
+            <br>
+            <!-- <label for="insurance_type">Insurance Type:</label> -->
+            <!-- <input type="text" id="insurance_type" name="insurance_type" placeholder="Insurance Type"> -->
+            <select name="insurance_type" id="insurance_type">
+                <option value="" disabled selected>Select Insurance Type</option>
+                <option value="Motor Insurance">Motor Insurance</option>
+                <option value="Health Insurance">Health Insurance</option>
+                <option value="Travel Insurance">Travel Insurance</option>
+                <option value="Property Insurance">Property Insurance</option>
+                <option value="Workmen Insurance">Workmen Insurance</option>
+            </select>
+            <br>
+            <!-- <label for="company_name">Company Name:</label> -->
+            <input type="text" id="company_name" name="company_name" placeholder="Company Name">
+            <br>
+            <!-- <label for="policy_no">Policy No:</label> -->
+            <input type="text" id="policy_no" name="policy_no" placeholder="Policy No" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>

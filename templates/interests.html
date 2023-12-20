@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+</head>
+
+<body>
+    <h2>Appointments</h2>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Date of Birth</th>
+            <th>Motor Type</th>
+        </tr>
+        {% for appointment in motor_interests %}
+            <tr>
+                <td>{{ appointment.id }}</td>
+                <td>{{ appointment.name }}</td>
+                <td>{{ appointment.mobile }}</td>
+                <td>{{ appointment.email }}</td>
+                <td>{{ appointment.dob }}</td>
+                <td>{{ appointment.motor_type }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

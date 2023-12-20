@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Insurance</title>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    </head>
+    <body>
+        <!-- NAVBAR -->
+
+        <nav>
+            <div class="container">
+                <a href="/"><img src="{{ url_for('static', filename='img/LOGO.svg') }}" alt="JS Insurance"></a>
+
+                <div class="options">
+                    <div class="dropdown">
+                        <button class="dropbtn">Insurance Products <span><img src="{{ url_for('static', filename='img/alt-arrow-down.svg') }}" alt=""></span></button>
+                        <div class="dropdown-content">
+                            <a href="{{url_for('motor_page')}}"><img src="{{ url_for('static', filename='img/motor-product.svg') }}">Motor Product</a>
+                            <a href="{{url_for('travel_page')}}"><img src="{{ url_for('static', filename='img/travel-product.svg') }}">Travel Product</a>
+                            <a href="{{url_for('health_page')}}"><img src="{{ url_for('static', filename='img/health-product.svg') }}">Health Product</a>
+                            <a href="{{url_for('property_page')}}"><img src="{{ url_for('static', filename='img/property-product.svg') }}">Property Product</a>
+                            <a href="{{url_for('workmen_page')}}"><img src="{{ url_for('static', filename='img/workmen-product.svg') }}">Workmen Product</a>
+                        </div>            
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Support <span><img src="{{ url_for('static', filename='img/alt-arrow-down.svg') }}" alt=""></span></button>
+                        <div class="dropdown-content">
+                            <a href="{{url_for('track')}}"><img src="{{ url_for('static', filename='img/track-page-icon.svg') }}">Track your Policy</a>
+                            <a href="{{url_for('download')}}"><img src="{{ url_for('static', filename='img/download-page-icon.svg') }}">Download your Policy</a>
+                            <a href="{{url_for('claims')}}"><img src="{{ url_for('static', filename='img/claim-page-icon.svg') }}">Claim your Policy</a>
+                            <a href="tel: +919666697796"><img src="{{ url_for('static', filename='img/callback-icon.svg') }}">Request a Callback</a>
+                        </div>            
+                    </div>
+
+                    <a href="{{url_for('login')}}"><button class="sign-in" id="sign-in">Sign In</button></a>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- END OF NAVBAR -->
+
+        <!-- {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    <h3 style="text-align: center;">{{ message }}</h3>
+                </div>
+            {% endfor %}
+        {% endwith %} -->
+
+        <div class="main-hero">
+            <div class="banner">
+                <div class="message">
+                    <h2>Over 100+ Customers Trusted Us Because We Care</h2>
+                    <div class="short-messages">
+                        <div class="short-message">100% Claim Assistance</div>
+                        <div class="short-message">Quick and Easy</div>
+                        <div class="short-message">Hassle free Support</div>
+                    </div>
+                    <button onclick="scrollToSection('call-scheduler')">Schedule a Call Now</button>
+                </div>
+                <img src="{{ url_for('static', filename='img/Vector_139.png') }}" alt="Banner image">
+            </div>
+            
+            <div class="products">
+                <h3>Our Products</h3>
+                <div class="products-catalog">
+                    <div class="product" id="motor">
+                        <img src="{{ url_for('static', filename='img/motor-product.svg') }}" alt="motor">
+                        <p>Motor<br/> Insurance</p>
+                    </div>
+                    <div class="product" id="health">
+                        <img src="{{ url_for('static', filename='img/health-product.svg') }}" alt="health">
+                        <p>Health<br/> Insurance</p>
+                    </div>
+                    <div class="product" id="property">
+                        <img src="{{ url_for('static', filename='img/property-product.svg') }}" alt="property">
+                        <p>Property<br/> Insurance</p>
+                    </div>
+                    <div class="product" id="travel">
+                        <img src="{{ url_for('static', filename='img/travel-product.svg') }}" alt="travel">
+                        <p>Travel<br/> Insurance</p>
+                    </div>
+                    <div class="product" id="workmen">
+                        <img src="{{ url_for('static', filename='img/workmen-product.svg') }}" alt="workment">
+                        <p>Workmen<br/> Compensation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-container">
+            
+        <div class="features">
+            <div class="feature" id="track">
+                <img src="{{ url_for('static', filename='img/track-icon.svg') }}" alt="track">
+                <p>Track Your Policy</p>
+            </div>
+            <div class="feature" id="download">
+                <img src="{{ url_for('static', filename='img/download-icon.svg') }}" alt="download">
+                <p>Download Your Policy</p>
+            </div>
+            <div class="feature" id="claims">
+                <img src="{{ url_for('static', filename='img/claim-icon.svg') }}" alt="claim">
+                <p>Claim Your Policy</p>
+            </div>
+        </div>
+
+        <img class="ad" src="{{ url_for('static', filename='img/ad.png') }}" alt="advertisement">
+    </div>
+
+
+        <div class="call-scheduler-container" id="call-scheduler">
+            <h3>Schedule a call with our Insurance Advisor</h3>
+
+            <div class="call-scheduler">
+                <img src="{{ url_for('static', filename='img/appointment-pic.png') }}"  alt="appointment">
+
+                <form method="POST" action="/appointments">
+                    <label for="username">Enter your Name:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <div class="age-container">
+                        <div class="age-input">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+
+                        <!-- <br> -->
+                        <div class="age-input">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" required> 
+                        </div>
+   
+                    </div>
+
+
+                    <!-- <br> -->
+                    <label for="mobile">Mobile:</label>
+                    <input type="number" id="mobile" name="mobile" required>
+                    <br>
+                    
+                    <label class="radio-label">
+                        <input type="radio" id="updates" name="updates" value="True">I want to get updates on Whatsapp
+                    </label>
+                    <!-- <br> -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="appointment_date">Enter Appointment Date:</label>
+                    <input type="date" id="appointment_date" name="appointment_date" required>
+                    <br>
+                    <input type="submit" value="Schedule a Call">
+                    <br>
+                    <!-- {%  if success_message %}
+                    <p>Our team will contact you shortly!</p>
+                    {% endif %} -->
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="ratings">
+            <h2>Why Should You Choose Us</h2>
+            <h3>When it comes to protecting what matters most,<br/>you need an insurance partner you can trust.</h3>
+            <h4>We are one of the Top Rated among Insurance Service Providers</h4>
+            <img src="{{ url_for('static', filename='img/stars.png') }}"  alt="stars">
+        </div>
+
+
+        <div class="review-header">
+            <p class="JS-insurance"><span class="text-wrapper">JS Insurance </span> <span class="span">Provides You</span></p>
+
+            
+            <div class="reviews">
+                <div class="review review-left">
+                    <h2>Tailored<br/> Coverage</h2>
+                    <h2>Unmatched<br/> Expertise</h2>
+                </div>
+                <img src="{{ url_for('static', filename='img/services-pic.png') }}" alt="Services">
+                <div class="review review-right">
+                    <h2>Outstanding<br/> Customer Service</h2>
+                    <h2>Competitive<br/> Pricing</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="companies">
+            <h2>Companies Who Trusted Us</h2>
+            <div class="company-logos">
+                <img src="{{ url_for('static', filename='img/lic-india-logo 2.png') }}" alt="LIC">
+                <img src="{{ url_for('static', filename='img/icici-lombard-logo-CBC16AFE97-seeklogo 4.png') }}"  alt="ICICI">
+                <img src="{{ url_for('static', filename='img/512px-TATA_AIG_logo 5.png') }}" alt="TATA">
+                <img src="{{ url_for('static', filename='img/ni 2.png') }}"  alt="NIA">
+                <img src="{{ url_for('static', filename='img/image 2.png') }}"  alt="digit">
+            </div>
+        </div>
+
+
+        <div class="testimonials-container">
+            <h2>What Our Customers Are Saying</h2>
+            <div class="testimonials">
+                <div class="testimony">
+                    <img src="{{ url_for('static', filename='img/mahathi.png') }}" alt="Mahathi">
+                    <p class="customer-name">Mahathi</p>
+                    <p>JS Insurance excels In offering<br/> a personal touch from policy<br/> setup to claims. Attentive agents,<br/> straightforward paperwork,<br/> and a reassuring<br/> sense of trust<br/> make it a top choice.</p>
+                </div>
+
+                <div class="testimony">
+                    <img src="{{ url_for('static', filename='img/soumya.png') }}" alt="Soumya">
+                    <p  class="customer-name">Soumya</p>
+                    <p>JS went the extra mile in<br/> providing health insurance for<br/> me and my family. Expert<br/> agents offer personalized<br/> advice. A solid 5 stars<br/> for exceptional<br/> service.</p>
+                </div>
+
+                <div class="testimony">
+                    <img src="{{ url_for('static', filename='img/kavya.png') }}" alt="Kavya">
+                    <p  class="customer-name">Kavya</p>
+                    <p>JS provides Face-to-face<br/> consultations ensure<br/> personalized coverage.<br/> Trustworthy and hassle<br/> free. I strongly<br/> recommend their<br/> services.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-button">
+            <button class="bottom-call" onclick="scrollToSection('call-scheduler')">Schedule a Call Now</button>
+        </div>
+        
+
+
+        
+
+
+        <div class="footer-bar">
+            <h3>Contact Us</h3>
+            <p>Email Id: shalomjs3399@gmail.com</p>
+            <p>Mobile Number: +919666697796</p>
+            <p class="copyright-text">© 2023 JS Insurance Services, All Rights Reserved.</p>
+        </div>
+
+
+        <script>
+            function scrollToSection(sectionId) {
+                var section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+
+
+            document.getElementById("motor").addEventListener("click", function() {
+                window.location.href = "/motor";
+            });
+
+            document.getElementById("health").addEventListener("click", function() {
+                window.location.href = "/health";
+            });
+
+            document.getElementById("property").addEventListener("click", function() {
+                window.location.href = "/property";
+            });
+
+            document.getElementById("travel").addEventListener("click", function() {
+                window.location.href = "/travel";
+            });
+
+            document.getElementById("workmen").addEventListener("click", function() {
+                window.location.href = "/workmen";
+            });
+
+            document.getElementById("track").addEventListener("click", function() {
+                window.location.href = "/track";
+            });
+
+            document.getElementById("download").addEventListener("click", function() {
+                window.location.href = "/download";
+            });
+
+            document.getElementById("claims").addEventListener("click", function() {
+                window.location.href = "/claims";
+            });
+
+
+
+        </script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+        
+    </body>
+</html>

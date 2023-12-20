@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="{{url_for('static', filename='img/LOGO.svg')}}" alt="">
+        <h2>Welcome to JS Insurance</h2>
+        <div class="form-container">
+            <img src="{{url_for('static', filename='img/login-graphic.svg')}}" alt="Login-graphic">
+            <form method="POST" action="/login">
+                <label for="mobile">Mobile:</label><br>
+                <input type="text" id="mobile" name="mobile" placeholder="Mobile" required>
+                <br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <br>
+                <input type="submit" value="Login"><br>
+                <a href="{{url_for('reset_password_request')}}">Forgot Password?</a><br><br>
+                <span>New User?<a href="{{url_for('signup')}}">Sign Up</a></span>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

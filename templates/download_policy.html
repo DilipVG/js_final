@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Download your Policy</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="container">
+            <a href="#"><img src="{{ url_for('static', filename='img/LOGO.svg') }}" alt="JS Insurance"></a>
+
+            <div class="options">
+
+                <div class="option">
+                    <p>Insurance Products</p>
+                    <img src="{{ url_for('static', filename='img/alt-arrow-down.svg') }}" alt="Arrow-Down">
+                </div>
+
+                <div class="option">
+                    <p>Support</p>
+                    <img src="{{ url_for('static', filename='img/alt-arrow-down.svg') }}" alt="Arrow-Down">
+                </div>
+
+                <button class="sign-in" id="sign-in">Sign In</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- END OF NAVBAR -->
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+                <h3 style="text-align: center;">{{ message }}</h3>
+            </div>
+        {% endfor %}
+    {% endwith %}
+
+    <div class="track-container">
+            <div class="track-input-container">
+            <img src="{{url_for('static', filename='img/download-page-icon.svg')}}" alt="">
+            <h2>To Download your Policy</h2>
+            <form method="POST" action="/download">
+                <select name="insurance_type" id="insurance_type">
+                    <option value="" disabled selected>Select Insurance Type</option>
+                    <option value="Motor Insurance">Motor Insurance</option>
+                    <option value="Health Insurance">Health Insurance</option>
+                    <option value="Travel Insurance">Travel Insurance</option>
+                    <option value="Property Insurance">Property Insurance</option>
+                    <option value="Workmen Insurance">Workmen Insurance</option>
+                </select>
+                <br>
+                
+                <select name="company_name" id="company_name">
+                    <option value="" disabled selected>Select Company Name</option>
+                    <option value="Bajaj">Bajaj</option>
+                    <option value="TATA AIG">TATA AIG</option>
+                    <option value="ICICI Lombard">ICICI Lombard</option>
+                    <option value="GoDigit">GoDigit</option>
+                    <option value="Liberty">Liberty</option>
+                    <option value="New India">New India</option>
+                    <option value="Oriental">Oriental</option>
+                    <option value="National">National</option>
+                    <option value="Sriram">Sriram</option>
+                    <option value="HDFC">HDFC</option>
+                    <option value="LIC">LIC</option>
+                </select>
+                <br>
+                <!-- <label for="policy_no">Policy No:</label> -->
+                <input type="text" id="policy_no" name="policy_no" placeholder="Policy No" required>
+                <br>
+                <input type="submit" id="submit" value="Download">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

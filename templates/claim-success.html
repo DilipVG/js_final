@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>claims</title>
+</head>
+<body>
+    <div class="claims-container">
+        <img src="{{url_for('static', filename='img/tick-icon.svg')}}" alt="Claims Check">
+        <p>Your details have been successfully submitted to us.<br>Our Insurance advisor will contact you shortly</p>
+        <img src="{{url_for('static', filename='img/claims-success-bottom.svg')}}" alt="Claims Success">
+    </div>
+    
+</body>
+</html>
